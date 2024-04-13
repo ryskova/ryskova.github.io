@@ -1,13 +1,184 @@
-@media (min-width: 576px) {
-    .navbar-expand-lg {
-      flex-wrap: nowrap;
-      justify-content: space-between;
+/* vítejte a o nás na pc */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: fit-content;
+    margin-bottom: -15%;
     }
-    .navbar-expand-lg .navbar-nav {
-      flex-direction: row;
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; margin: 5vw;}
+    .div3 { grid-area: 2 / 2 / 3 / 3; margin-top: -11vw; height: fit-content;}
+    .div4 { grid-area: 2 / 1 / 3 / 2; margin: 5vw; margin-top: -3vw; height: fit-content;}
+
+
+    .interier{
+        width: 35vw;
+        margin: 5vw;
+        border-radius: 20px;
+        -webkit-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+        -moz-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+        box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
     }
-    .navbar-expand-lg .nav-link {
-      padding-right: 1rem;
-      padding-left: 1rem;
+
+    .veganplate{
+        width: 40vw;
+        float: right;
+        margin-right: 10%;
     }
-  }
+/* KONEC vítejte a o nás na pc */
+/*texty a tak - vítejte a o nás*/
+.uvody{
+    font-size: 48px;
+}
+.texty-uvody{
+    font-size: 22px;
+}
+/*KONEC texty a tak - vítejte a o nás*/
+/* vítejte a o nás na mobilu */
+.parent-mob{
+    display: block;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+    .mob-div1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .interier-mob{
+        width: 90%;
+        margin: 5vw;
+        margin-top: 10vw;
+        border-radius: 10px;
+        -webkit-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+        -moz-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+        box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    }
+    .veganplate-mob{
+        width: 90%;
+        margin-top: 5vw;
+    }
+
+@media (max-width: 576px){
+    .parent{
+        display: none;
+    }
+    .parent-mob{
+        display: block;
+    }
+}
+
+@media (min-width: 577px){
+    .parent-mob{
+        display: none;
+    }
+}
+
+@media (max-width: 769px){
+    .div1 { grid-area: 1 / 1 / 2 / 2; margin-top: 5vw;}
+    .div2 { grid-area: 1 / 2 / 2 / 3; margin-top: 5vw;}
+    .div3 { grid-area: 2 / 2 / 3 / 3; height: fit-content; margin-top: 1vw;}
+    .div4 { grid-area: 2 / 1 / 3 / 2; margin: 5vw; height: fit-content; margin-top: -10vw;}
+
+    .uvody{
+        font-size: 30px;
+    }
+    .texty-uvody{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1050px){
+    .div1 { grid-area: 1 / 1 / 2 / 2; margin-top: 2vw;}
+    .div2 { grid-area: 1 / 2 / 2 / 3; margin-top: 5vw;}
+    .div3 { grid-area: 2 / 2 / 3 / 3; height: fit-content; margin-top: -7vw;}
+    .div4 { grid-area: 2 / 1 / 3 / 2; margin: 5vw; height: fit-content; margin-top: -1vw;}
+
+    .uvody{
+        font-size: 30px;
+    }
+    .texty-uvody{
+        font-size: 18px;
+    }
+}
+
+/* KONEC vítejte a o nás na mobilu */
+/*ikony s popisky*/
+.parent-ikony {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    
+    .div1ikony { grid-area: 1 / 1 / 2 / 2; }
+    .div2ikony { grid-area: 1 / 2 / 2 / 3; }
+    .div3ikony { grid-area: 1 / 3 / 2 / 4; }
+    .div4ikony { grid-area: 1 / 4 / 2 / 5; }
+
+    .div1ikony, .div2ikony, .div3ikony, .div4ikony {
+        border-radius: 10px;
+        padding: 10px;
+        
+        text-align: center; 
+      }
+      
+      .div1ikony i, .div2ikony i, .div3ikony i, .div4ikony i {
+        font-size: 140px;
+        color: rgb(61, 36, 3);
+        padding: 20px;
+      }
+      
+      .div1ikony h3, .div2ikony h3, .div3ikony h3, .div4ikony h3 {
+        margin-top: 0;
+      }
+
+/*Ikony s popisy - mobilní zobrazení*/
+
+@media (max-width: 768px){
+    .parent-ikony {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .div1ikony { grid-area: 1 / 1 / 2 / 2; }
+        .div2ikony { grid-area: 1 / 2 / 2 / 3; }
+        .div3ikony { grid-area: 2 / 1 / 3 / 2; }
+        .div4ikony { grid-area: 2 / 2 / 3 / 3; }
+          
+        .div1ikony i, .div2ikony i, .div3ikony i, .div4ikony i {
+            font-size: 70px;
+          }
+    
+}
+
+/*menu accordion*/
+section.nabidka{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nabidky{
+    max-width: 75%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+

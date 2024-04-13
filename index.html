@@ -3,51 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurace Karikatura</title>
+    <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/CSS/index.css">
-    <link rel="stylesheet" href="/CSS/global.css">
-    <script src="/JS/index.js"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <img src="/Obrazky/karikatura_logo.png" alt="Logo" class="d-inline-block align-text-top logomenu">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse transparent" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">O nás</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Denní menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Jidelní lístek</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nápojový lístek</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Rezervace</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-        </ul>
-        <button class="btn btn-outline-success me-2 menurezervace" type="button">Rezervovat stůl</button>
-      </div>
+    <!--menu pro pc-->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Logo Karikatura</a></div>
+            <ul class="links">
+                <li><a href="onas">O nás</a></li>
+                <li><a href="nabidka">Naše nabídka</a></li>
+                <li><a href="rezervace">Rezervace</a></li>
+                <li><a href="kontakt">Kontakt</a></li>
+                <li><a href="recenze">Recenze</a></li>
+                <li><a href="faq">FAQ</a></li>
+            </ul>
+            <a href="#" class="action_btn">Rezervovat stůl</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--menu pro mobil-->
+    <div class="dropdown_menu">
+        <li><a href="onas">O nás</a></li>
+        <li><a href="nabidka">Naše nabídka</a></li>
+        <li><a href="rezervace">Rezervace</a></li>
+        <li><a href="kontakt">Kontakt</a></li>
+        <li><a href="recenze">Recenze</a></li>
+        <li><a href="faq">FAQ</a></li>
     </div>
-  </nav>
+
+<!--uvod a o nas pro pc-->
+    <div class="parent">
+        <div class="div1">
+            <img src="Obrazky/interier_karikatury.jpg" class="interier">
+        </div>
+        <div class="div2">
+            <h1 class="uvody">Vítejte v Karikatuře</h1>
+            <p class="texty-uvody">Vítejte v naší restauraci, kde se spojuje chuť, zdraví a kreativita!</p>
+            <p class="texty-uvody">V našem menu najdete nejen lahodné pokrmy, ale také zdravé a vyvážené varianty. Máme radost představit vám naše exotické i tradiční pokrmy, které podtrhnou pestrost naší nabídky. Ať už jste milovníkem alternativních, veganských či tradičních pokrmů, u nás si přijdete na své.</p>
+            <p class="texty-uvody">Přijďte ochutnat nejen výborné jídlo, ale také atmosféru plnou vůní, barev a dobrodružství na každém talíři.</p>
+        </div>
+        <div class="div3">
+            <img src="Obrazky/vegan_food_clear.png" alt="" class="veganplate">
+        </div>
+        <div class="div4">
+            <h1 class="uvody">O nás</h1>
+            <p class="texty-uvody">Jsme váš gastronomický ráj, kde se váš vkus spojuje s naší vášní pro zdravé a vynikající jídlo. Na trh jsme přišli s touhou změnit svět.<br>V naší restauraci nejenže vaříme, ale také tvoříme - s láskou a kreativitou - alternativně.
+            </p>
+            <p class="texty-uvody">Naše filozofie je jednoduchá: přinést vám to nejlepší z orientální kuchyně v kombinaci s moderním přístupem k zdravému stravování. Každý pokrm, který opouští naši kuchyni, je pečlivě připraven s ohledem na kvalitu surovin a vaše potěšení z každého sousta.</p>
+        </div>
+    </div>
+
+<!--uvod a o nas pro tablet a mobil-->
+<div class="parent-mob">
+    <div class="mob-div1">
+        <img src="Obrazky/interier_karikatury.jpg" class="interier-mob">
+    </div>
+    <div class="mob-div2">
+        <h1>Vítejte v Karikatuře</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia fugit nihil nulla consequuntur aperiam tempore architecto, amet minus nostrum quidem repellat! Id, quaerat! Natus dolorum aut deserunt assumenda quibusdam ex.</p>
+    </div>
+    <div class="mob-div3">
+        <img src="Obrazky/vegan_food_clear.png" alt="" class="veganplate-mob">
+    </div>
+    <div class="mob-div4">
+        <h1>O nás</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti nam amet dolore eveniet. Quibusdam exercitationem officiis harum facere, autem sunt at, mollitia cupiditate, repellendus nihil ipsa tenetur placeat? Explicabo.</p>
+    </div>
+</div>
+
+<!--ikonky s popisy-->
+<div class="parent-ikony">
+    <div class="div1ikony">
+        <i class="fa-solid fa-car"></i>
+        <h3>Parkoviště</h3>
+    </div>
+    <div class="div2ikony">
+        <i class="fa-solid fa-wheelchair-move"></i>
+        <h3>Přístupné</h3>
+    </div>
+    <div class="div3ikony">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Přátelský přístup</h3>
+    </div>
+    <div class="div4ikony">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Take-Away</h3>
+    </div>
+</div>
+
+<!--Menu accordion-->
+<section class="nabidka">
+
+    <div class="nabidky">
+        <div class="dennimenu">
+            <h2>Denní menu na den</h2>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>Prozatím</p>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
+
+<script src="JS/index.js"></script>
+<script src="https://kit.fontawesome.com/40b2aa2c26.js" crossorigin="anonymous"></script>
