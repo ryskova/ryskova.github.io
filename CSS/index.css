@@ -165,20 +165,802 @@
 }
 
 /*menu accordion*/
+.nabidkanadpis{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
 section.nabidka{
-    width: 80%;
+    width: 700px;
     margin: 0 auto;
-    margin-top: 10vw;
+    margin-top: 2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .nabidky{
-    max-width: 75%;
+    width: 150%;
+    max-width: 80vw;
     margin-top: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid rgb(61, 36, 3);
     cursor: pointer;
 }
 
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h2{
+    font-size: 1.5rem;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer{ /*MAŽE SE PO VLOŽENÍ MENU CSV*/
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.nabidky.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.nabidky.active svg{
+    transform: rotate(180deg);
+}
+
+svg.svg1{
+    transition: transform 0.5s ease-in;
+    margin-right: 100px;
+}
+
+svg.svg2{
+    transition: transform 0.5s ease-in;
+    margin-left: 100px;
+}
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 768px){
+    section.nabidka{
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nabidky{
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid rgb(61, 36, 3);
+        cursor: pointer;
+    }
+
+    svg.svg1{
+        transition: transform 0.5s ease-in;
+        margin-right: 20px;
+    }
+    
+    svg.svg2{
+        transition: transform 0.5s ease-in;
+        margin-left: 20px;
+    }
+
+    .question h2{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/*recenze*/
+.recenzenadpis{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.outerdiv
+{
+	width: 100%;
+    margin-bottom: -25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerdiv
+{
+	transform: scale(0.9);
+	margin: 2rem;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.eachdiv
+{
+	padding: 1rem 2rem;
+    margin: 0.4rem;
+    border-radius: 0.8rem;
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    height: fit-content;
+}
+.div1-review
+{
+	background: rgb(121, 80, 80);
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 41%;
+}
+.div2-review
+{
+	background: rgb(61, 36, 3);
+    color: white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.div3-review
+{
+	background: white;
+    grid-column: 3/3;
+    grid-row: 1/2;
+}
+.div4-review
+{
+	background: rgb(61, 36, 3);
+    color: white;
+    grid-column: 1/3;
+    grid-row: 2/2;
+    width: 41%;
+}
+.div5-review
+{
+	background: white;
+    grid-column: 2/3;
+    grid-row: 2/2;
+    margin-top: -32vh;
+}
+.div6-review
+{
+	background: rgb(121, 80, 80);
+    grid-column: 3/3;
+    grid-row: 2/2;
+    margin-top: -18vh;
+}
+.userdetails
+{
+	display: flex;
+}
+.imgbox
+{
+	margin-right: 1rem;
+}
+.imgbox img
+{
+	border-radius: 50%;
+	width: 3rem;
+	border: 2px solid wheat;
+}
+.detbox
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.detbox p
+{
+	margin: 0;
+}
+.detbox .name
+{
+	color: white;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+.detbox .name.dark
+{
+	color: rgb(61, 36, 3);
+}
+.detbox .designation
+{
+	color: rgb(217, 213, 213);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.detbox .designation-dark
+{
+	color: rgb(96, 94, 94);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.review h4
+{
+	font-size: 1.4rem;
+	color: wheat;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+.review.dark h4{
+	color: rgb(121, 80, 80);
+}
+.review p
+{
+	font-size: 18px;
+    color: white;
+    font-weight: 500;
+    opacity: 90%;
+    line-height: 1.5;
+}
+.review.dark p{
+	color: rgb(61, 36, 3);
+    opacity: 90%;
+}
+
+/*recenze - responzivita - tablet a mobil*/
+@media (min-width: 577px) and (max-width: 768px){
+    .outerdiv{
+        margin-top: -12vh;
+    }
+    .div1-review{
+        width: 33%;
+    }
+    .div2-review{
+        width: 73%;
+    }
+    .div4-review{
+        margin-top: -2%;
+        width: 33%;
+    }
+    .div5-review{
+        margin-top: -100%;
+        width: 73%;
+    }
+    .div6-review{
+        margin-top: -50vh;
+    }
+    .review h4{
+        font-size: 1.2rem;
+    }   
+    .review p{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .div5-review
+    {
+        margin-top: -40vh;
+    }
+    .div6-review
+    {
+        margin-top: -9vh;
+    }
+}
+
+
+@media (max-width: 576px){
+    .div1-review{
+        width: auto;
+    }
+    .div4-review{
+        width: auto;
+    }
+    .div5-review{
+        margin-top: 0px;
+    }
+    .div6-review{
+        margin-top: 0px;
+    }
+    .review h4{
+        font-size: 1.2rem;
+    }   
+    .review p{
+        font-size: 15px;
+    }
+
+    .div1 {
+		background-position-x: 10rem;
+	}
+	.innerdiv
+	{
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1);
+		margin: 2rem;
+		margin-bottom: 5rem;
+	}
+}
+
+/*FAQ*/
+.faqnadpis{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+section.faq{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dotazy{
+    width: 150%;
+    max-width: 80vw;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(61, 36, 3);
+    cursor: pointer;
+}
+
+.dotaz{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dotaz h2{
+    font-size: 1.5rem;
+}
+
+.odpoved{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.odpoved{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.dotazy.active .odpoved{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.dotazy.active svg{
+    transform: rotate(180deg);
+}
+
+svg.svg1{
+    transition: transform 0.5s ease-in;
+    margin-right: 100px;
+}
+
+svg.svg2{
+    transition: transform 0.5s ease-in;
+    margin-left: 100px;
+}
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 768px){
+    section.faq{
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dotazy{
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid rgb(61, 36, 3);
+        cursor: pointer;
+    }
+
+    svg.svg1{
+        transition: transform 0.5s ease-in;
+        margin-right: 20px;
+    }
+    
+    svg.svg2{
+        transition: transform 0.5s ease-in;
+        margin-left: 20px;
+    }
+
+    .dotaz h2{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .odpoved{
+        font-size: 18px;
+    }
+}
+
+
+/*Kontakty*/
+.kontaktwrap{
+    background-color: wheat;
+    padding-bottom: 100px;
+}
+.outerkon
+{
+	width: 100%;
+    margin-bottom: -25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerkon
+{
+	transform: scale(0.8);
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.div1-kon2
+{
+    width: 100%;
+    height: 10%;
+    font-size: 1.5rem;
+    margin-bottom: 20vh;
+}
+.div1-kon2 h2{
+    font-size: 3rem;
+    margin-bottom: 24%;
+}
+.sipka{
+    width: 50%;
+    transform: rotate(-40deg);
+    margin-left: 20%;
+}
+.oteviracka
+{
+	font-size: 1.5rem;
+}
+.oteviracka2
+{
+	font-size: 1.5rem;
+}
+.oteviracka h3{
+    margin-left: 10%;
+}
+.oteviracka p{
+    margin-left: 10%;
+}
+.mapa2{
+    border-radius: 5%;
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    width: 600px;
+    height: 450px;
+}
+.div2-kon2 h2{
+    font-size: 3rem;
+    margin-bottom: 24%;
+}
+.kontaktni-udaje2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.poznamka-kontaktu2{
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+}
+
+.tesimese
+{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: -30vh;
+}
+
+.fototymu2{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+}
+
+@media (max-width: 1024px){
+    .outerkon{
+        transform: scale(0.9);      
+    }
+    .innerkon{
+        margin-top: -7%; 
+    }
+    .div1-kon2{
+    width: 80%;
+    }
+    .mapa2{
+        width: 400px;
+    }
+    .oteviracka{
+        margin-top: 28%;
+        margin-right: 10%;
+    }
+    .tesimese{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: -40vh;
+    }
+}
+@media (max-width: 768px){
+    .div1-kon2{
+        width: 70%;
+        font-size: 1.4rem;
+    }
+    .mapa2{
+        width: 300px;
+        height: 400px;
+    }
+    .div1-kon2 h2{
+        font-size: 3rem;
+        width: 200%;
+    }
+    .oteviracka{
+        margin-top: 90%;
+        margin-left: -40%;
+        font-size: 1.35rem;
+        width: 150%
+    }
+    .sipka{
+        display: none;
+    }
+    .div2-kon2 h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .kontaktni-udaje2{
+        font-size: 25px;
+        width: 120%;
+    }
+    .tesimese{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: -35vh;
+}
+}
+
+/*Kontakty - mobil*/
+.kontaktwrap-mob{
+    background-color: wheat;
+    padding-bottom: 0;
+}
+.outerkon-mob
+{
+	width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerkon-mob
+{
+	transform: scale(0.8);
+	display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0;
+}
+
+.div1-kon2-mob
+{
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+.div1-kon2-mob h2{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.oteviracka-mob
+{
+	font-size: 1.5rem;
+    text-align: center;
+}
+.oteviracka2-mob
+{
+	font-size: 1.5rem;
+}
+.oteviracka-mob h3{
+    margin-left: 0;
+}
+.oteviracka-mob p{
+    margin-left: 0;
+}
+.mapa2-mob{
+    margin-top: -25%;
+    margin-bottom: 10%;
+    border-radius: 5%;
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    width: 100vw;
+    height: 60vh;
+}
+.div2-kon2-mob h2{
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+.kontaktni-udaje2-mob{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -80vh;
+    text-align: center;
+}
+
+.poznamka-kontaktu2-mob{
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+    text-align: center;
+}
+
+.tesimese-mob
+{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: -100vh;
+}
+
+.fototymu2-mob{
+    width: 100%;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    -moz-box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+    box-shadow: 10px 10px 10px 1px rgba(61, 36, 3,0.39);
+}
+
+@media (max-width: 767px){
+    .kontakty-velke{
+        display: none;
+    }
+    .kontakty-male{
+        display: flex;
+    }
+}
+
+@media (min-width: 768px){
+    .kontakty-velke{
+        display: flex;
+    }
+    .kontakty-male{
+        display: none;
+    }
+}
+
+/*Formulář na rezervaci*/
+form{
+    max-width: 80%;
+    padding: 3vw;
+    margin: 5vw auto;
+    border: solid black 1px;
+    border-radius: 20px;
+}
+label{
+    text-align: center;
+    margin-left: 10%;
+}
+input{
+    width: fit-content;
+}
+form h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.form-control{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+form ul{
+    text-align: center;
+}
+form li{
+    border-radius: 5px;
+    padding: 20px;
+    appearance: button;
+    cursor: pointer;
+    width: fit-content;
+    float: left;
+    margin: 10px;
+    background-color: white;
+}
+form label[for="email"] {
+    display: block;
+    clear: both;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: -15px;
+}
+#pocetosob{
+    margin-left: 66px;
+    margin-top: -0.1px;
+}
+.souhlas{
+    margin-left: 10%;
+    margin-right: -8%;
+    margin-bottom: 6vh;
+}
+.rezervujeme{
+    background-color: rgb(34, 3, 3);
+    color: white;
+    padding: 1rem 1.6rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.rezervujeme:hover{
+    scale: 1.05;
+    transition-duration: 0.5s;
+}
+div.rezervujeme2{
+    text-align: center;
+}
