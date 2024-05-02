@@ -17,6 +17,7 @@
 #menu {
     text-align: center;
     margin-top: 20px;
+    font-size: 2rem;
 }
 
 .vyber {
@@ -81,19 +82,19 @@ div.vyber button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: none;
-    background-color: #f6d365;
+    background-color: white;
 }
 
 .category div {
     flex: 0 0 calc(33.33% - 20px);
     box-sizing: border-box;
     margin-bottom: 20px;
-    background-color: #e5914C;
+    background-color: burlywood;
     border-radius: 8px;
 }
 .category div div.stuff{
