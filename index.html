@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+</head>
+<body>
+    <!--menu pro pc-->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Logo Karikatura</a></div>
+            <ul class="links">
+                <li><a href="onas">O nás</a></li>
+                <li><a href="nabidka">Naše nabídka</a></li>
+                <li><a href="recenze">Recenze</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="rezervace">Rezervace</a></li>
+                <li><a href="kontakt">Kontakt</a></li>
+            </ul>
+            <a href="#" class="action_btn">Rezervovat stůl</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--menu pro mobil-->
+    <div class="dropdown_menu">
+        <li><a href="onas">O nás</a></li>
+        <li><a href="nabidka">Naše nabídka</a></li>
+        <li><a href="recenze">Recenze</a></li>
+        <li><a href="faq">FAQ</a></li>
+        <li><a href="rezervace">Rezervace</a></li>
+        <li><a href="kontakt">Kontakt</a></li>
+    </div>
+
+<!--uvod a o nas pro pc-->
+    <div class="parent">
+        <div class="div1">
+            <img src="Obrazky/interier_karikatury-min.jpg" class="interier">
+        </div>
+        <div class="div2">
+            <h1 class="uvody">Vítejte v Karikatuře</h1>
+            <p class="texty-uvody">Vítejte v naší restauraci, kde se spojuje chuť, zdraví a kreativita!</p>
+            <p class="texty-uvody">V našem menu najdete nejen lahodné pokrmy, ale také zdravé a vyvážené varianty. Máme radost představit vám naše exotické i tradiční pokrmy, které podtrhnou pestrost naší nabídky. Ať už jste milovníkem alternativních, veganských či tradičních pokrmů, u nás si přijdete na své.</p>
+            <p class="texty-uvody">Přijďte ochutnat nejen výborné jídlo, ale také atmosféru plnou vůní, barev a dobrodružství na každém talíři.</p>
+        </div>
+        <div class="div3">
+            <img src="Obrazky/vegan_food_clear.webp" alt="" class="veganplate">
+        </div>
+        <div class="div4">
+            <h1 class="uvody">O nás</h1>
+            <p class="texty-uvody">Jsme váš gastronomický ráj, kde se váš vkus spojuje s naší vášní pro zdravé a vynikající jídlo. Na trh jsme přišli s touhou změnit svět.<br>V naší restauraci nejenže vaříme, ale také tvoříme - s láskou a kreativitou - alternativně.
+            </p>
+            <p class="texty-uvody">Naše filozofie je jednoduchá: přinést vám to nejlepší z orientální kuchyně v kombinaci s moderním přístupem k zdravému stravování. Každý pokrm, který opouští naši kuchyni, je pečlivě připraven s ohledem na kvalitu surovin a vaše potěšení z každého sousta.</p>
+        </div>
+    </div>
+
+<!--uvod a o nas pro tablet a mobil-->
+<div class="parent-mob">
+    <div class="mob-div1">
+        <img src="Obrazky/interier_karikatury-min.jpg" class="interier-mob">
+    </div>
+    <div class="mob-div2">
+        <h1>Vítejte v Karikatuře</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia fugit nihil nulla consequuntur aperiam tempore architecto, amet minus nostrum quidem repellat! Id, quaerat! Natus dolorum aut deserunt assumenda quibusdam ex.</p>
+    </div>
+    <div class="mob-div3">
+        <img src="Obrazky/vegan_food_clear.webp" alt="" class="veganplate-mob">
+    </div>
+    <div class="mob-div4">
+        <h1>O nás</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi deleniti nam amet dolore eveniet. Quibusdam exercitationem officiis harum facere, autem sunt at, mollitia cupiditate, repellendus nihil ipsa tenetur placeat? Explicabo.</p>
+    </div>
+</div>
+
+<!--ikonky s popisy-->
+<div class="parent-ikony">
+    <div class="div1ikony">
+        <i class="fa-solid fa-car"></i>
+        <h3>Parkoviště</h3>
+    </div>
+    <div class="div2ikony">
+        <i class="fa-solid fa-wheelchair-move"></i>
+        <h3>Přístupné</h3>
+    </div>
+    <div class="div3ikony">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Přátelský přístup</h3>
+    </div>
+    <div class="div4ikony">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Take-Away</h3>
+    </div>
+</div>
+<!--Nabídka jídla varianta 1-->
+<section class="menu-jidlo">
+<h1 id="menu">Nabídka</h1>
+        <!-- Menu - Show by btn-->
+        <div class="vyber">
+            <button onclick="showCategory('all')">Vše</button>
+            <button onclick="showCategory('predkrm')">Předkrmy</button>
+            <button onclick="showCategory('polevka')">Polévky</button>
+            <button onclick="showCategory('hlavnijidla')">Hlavní jídla</button>
+            <button onclick="showCategory('dezert')">Dezerty</button>
+        </div>
+        <div class="menu">
+            <div id="predkrm" class="category"></div>
+            <div id="polevka" class="category"></div>
+            <div id="hlavnijidla" class="category"></div>
+            <div id="dezert" class="category"></div>
+        </div>
+</section>
+<!--Konec - Nabídka jídla varianta 1-->
+<!--Menu accordion-->
+<hr>
+<section class="nabidka">
+    <h2 class="nabidkanadpis">Podívejte se na naší nabídku</h2>
+
+    <div class="nabidky">
+        <div class="question">
+            <svg width="20" height="10" viewBox="0 0 42 25" class="svg1">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <h2 id="datumjidelnicku"></h2>
+            <svg width="20" height="10" viewBox="0 0 42 25" class="svg2">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>Prozatím</p>
+        </div>
+    </div>
+
+    <div class="nabidky">
+        <div class="question">
+            <svg width="20" height="10" viewBox="0 0 42 25" class="svg1">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <h2>Stálý jídelní lístek</h2>
+            <svg width="15" height="10" viewBox="0 0 42 25" class="svg2">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>Prozatím</p>
+        </div>
+    </div>
+
+    <div class="nabidky">
+        <div class="question">
+            <svg width="20" height="10" viewBox="0 0 42 25" class="svg1">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <h2>Nápojový lístek</h2>
+            <svg width="15" height="10" viewBox="0 0 42 25" class="svg2">
+                <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="answer">
+            <p>Prozatím</p>
+        </div>
+    </div>
+</section>
+
+<!--recenze-->
+<hr>
+<h2 class="recenzenadpis">Recenze našich zákazníků</h2>
+<div class="outerdiv">
+    <div class="innerdiv">
+      <!-- div1 -->
+      <div class="div1-review eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
+          </div>
+          <div class="detbox">
+            <p class="name">Gabriela Brzobohatá</p>
+            <p class="designation">Výživová poradkyně</p>
+          </div>
+        </div>
+        <div class="review">
+          <h4>Dostala jsem tip na navštívení této restaurace, a bylo to to nejlepší doporučení mého života. Nyní podnik doporučuji všem mým klientům a známým.</h4>
+        <p>“Jako výživová poradkyně jsem vždy hledala restauraci, která dokáže spojit vynikající chuť s výživnými a zdravými možnostmi stravování. A tento podnik je přesně tím, co jsem hledala! Dostala jsem tip na navštívení této restaurace, a musím říct, že to bylo to nejlepší doporučení mého života. Jejich široká nabídka veganských a vegetariánských pokrmů je plná živin a přitom nekompromisně lahodná. Každé jídlo je pečlivě připravené s ohledem na vyváženost živin a dochucené šetrnými ingrediencemi. Nyní podnik touto restaurací doporučuji všem mým klientům a známým, kteří chtějí nejen dobře jíst, ale také pečovat o své zdraví.”</p>
+        </div>
+      </div>
+      <!-- div2 -->
+      <div class="div2-review eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg" alt="">
+          </div>
+          <div class="detbox">
+            <p class="name">Frederik Trastný</p>
+            <p class="designation">Vášnivý sportovec</p>
+          </div>
+        </div>
+        <div class="review">
+          <h4>Výborná alternativní restaurace plná orientálních chutí a příjemného personálu!</h4>
+            <p>“Tahle restaurace je naprostá oáza zdraví a chutí! Přišli jsme s přáteli na večeři a byli jsme ohromeni. Menu nabízí široký výběr veganských a vegetariánských pokrmů, které nejenže skvěle vypadají, ale i úžasně chutnají. Atmosféra je velmi příjemná a personál nesmírně vstřícný. Určitě se sem brzy vrátíme!”</p>
+        </div>
+      </div>
+      <!-- div3 -->
+      <div class="div3-review eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
+          </div>
+          <div class="detbox">
+            <p class="name dark">Květa Hadrbolcová</p>
+            <p class="designation-dark">Restaurační a gastronomická recenzentka</p>
+          </div>
+        </div>
+        <div class="review dark">
+          <h4>Až životměnící zkušenost. Flexibilnost i tam, kde to není běžné. Velice doporučuji!</h4>
+          <p>“Musím vám říct, milé dámy a pánové, že tato veganská restaurace je opravdovým klenotem! Každý kousek jídla je připraven s láskou a neodolatelně naservírován přímo před nos. Byla jsem nadšená, když byli flexibilní a vyhověli všem mým neobvyklým potřebám a požadavkům. To totiž není standartem. Atmosféra je tak příjemná a uklidňující, že se zde budete cítit jako doma. Doporučuji sem zavítat na romantickou večeři či na příjemné setkání s přáteli. Určitě se sem ráda znovu vrátím!”</p>
+        </div>
+      </div>
+      <!-- div4 -->
+      <div class="div4-review eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg" alt="">
+          </div>
+          <div class="detbox">
+            <p class="name">Tereza Abelmaierová</p>
+            <p class="designation">Studentka lékařské fakulty</p>
+          </div>
+        </div>
+        <div class="review">
+          <h4>Zdravé, dobré a cenově dostupné</h4>
+            <p>“Jako studentka se snažím najít zdravé a cenově dostupné možnosti stravování. Tato veganská restaurace byla pro mě příjemným objevem. Jejich menu nabízí skvělé možnosti pro vegetariány i vegany, a to za rozumné ceny. Příjemné prostředí restaurace a ochotný personál udělali z mé návštěvy opravdový zážitek. Určitě se sem brzy vrátím!”</p>
+        </div>
+        </div>
+        <!-- div5 -->
+      <div class="div5-review eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg" alt="">
+          </div>
+          <div class="detbox">
+            <p class="name dark">Petra Machačová</p>
+            <p class="designation-dark">Profesionální tenistka</p>
+          </div>
+        </div>
+        <div class="review dark">
+          <h4>Až životměnící zkušenost. Flexibilnost i tam, kde to není běžné. Velice doporučuji!</h4>
+          <p>“Jako profesionální tenistka je pro mě důležité dbát na vyváženou stravu, která mi poskytne potřebné živiny a energii. Tato veganská restaurace se stala mou oblíbenou volbou pro zdravé a chutné jídlo. Jejich menu je plné lahodných pokrmů, které poskytují dostatek proteinů a dalších živin nezbytných pro mou kondici. Atmosféra restaurace je příjemná a relaxační, ideální pro odpočinek po tréninku. Doporučuji tuto restauraci všem, kdo chtějí jíst zdravě a efektivně podporovat své sportovní výkony.”</p>
+        </div>
+      </div>
+      <!-- div6 -->
+      <div class="div6-review eachdiv">
+        <div class="userdetails">
+          <div class="imgbox">
+            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg" alt="">
+          </div>
+          <div class="detbox">
+            <p class="name">Gabriela Brzobohatá</p>
+            <p class="designation">Výživová poradkyně</p>
+          </div>
+        </div>
+        <div class="review">
+          <h4>Konečně něco jiného od klasických restaurací a nudné nabídky. Restaurace nabitá pozitivní energií. </h4>
+        <p>“Jako turistický průvodce se často setkávám s různými restauracemi a hledám ta nejlepší místa kde nabrat energii. Tato veganská restaurace mě mile překvapila svou širokou nabídkou, která je nejen chutná, ale také zdravá. Atmosféra restaurace je přívětivá a moderní, což činí z návštěvy opravdový zážitek. Doporučuji tuto restauraci všem cestovatelům, kteří hledají skvělou stravu během svých výletů.”</p>
+        </div>
+      </div>
+      </div>
+      <!--konec divu4-->
+    </div>
+  </div>
+<!--konec recenzí-->
+<!--FAQ-->
+<hr>
+<section class="faq">
+    <h2 class="faqnadpis">Časté dotazy</h2>
+    <div>
+      <p style="text-align: center;">Zde najdete odpovědi na vaše nejčastější dotazy.</p>
+      <p style="text-align: center;">Máte-li nějaké další otázky, neváhejte nás kontaktovat!</p>
+    </div>
+    <div class="dotazy">
+      <div class="dotaz">
+          <h2>Máte nějaký věrnostní program?</h2>
+          <svg width="20" height="10" viewBox="0 0 42 25" class="svg2">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+      </div>
+      <div class="odpoved">
+          <p>Ano, při první návštěve restaurace máte příležitost získat kartičku, a ve chvíli, kdy budete mít 5 razítek, budete mít na svou další návštěvu 40% slevu. Pro pokračování ve věrnostním programu dostanete kartičku novou.</p>
+      </div>
+  </div>
+
+    <div class="dotazy">
+      <div class="dotaz">
+          <h2>Dají se u vás pořádat oslavy, svatební, pohřební hostiny...?</h2>
+          <svg width="20" height="10" viewBox="0 0 42 25" class="svg2">
+              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+      </div>
+      <div class="odpoved">
+          <p>Samozřejmě, v případě zájmu o pořádání větší akce, zabookování více prostor či celé restaurace nás kontaktujte telefonicky či e-mailem.</p>
+      </div>
+  </div>
+
+  <div class="dotazy">
+      <div class="dotaz">
+        <h2>Jak je to u vás s parkováním?</h2>
+        <svg width="20" height="10" viewBox="0 0 42 25" class="svg2">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="odpoved">
+        <p>Parkovací kapacitu máme až pro 45 aut, a pro všechny hosty zdarma. Zaparkujete si u nás samozřejmě i kolo.</p>
+    </div>
+  </div>
+
+  <div class="dotazy">
+   <div class="dotaz">
+      <h2>Je vaše restaurace pet-friendly?</h2>
+      <svg width="20" height="10" viewBox="0 0 42 25" class="svg2">
+          <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="odpoved">
+      <p>Ano, ale pouze na zahrádce. Do vnitřních prostor, prosíme, své zvířecí kamarády nevoďte.</p>
+    </div>
+  </div>
+
+    </div>
+</section>
+<!--konec FAQ-->
+<!--Rezervační formulář-->
+<form>
+  <h1>Rezervace</h1>
+  <div class="form-floating mb-3">
+    <label for="name">Jméno a příjmení</label><br>
+    <input type="text" class="form-control" id="name" placeholder="Vaše jméno a příjmení">
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label for="datum">Datum</label><br>
+      <input type="date" class="form-control" id="datum" placeholder="Datum" aria-label="Datum">
+    </div>
+    <div class="col">
+      <label for="cas">Čas</label><br>
+      <input type="text" class="form-control" id="cas" placeholder="Čas" aria-label="Čas">
+    </div>
+    <div class="col">
+      <label for="delkanavstevy">Délka návštěvy</label><br>
+      <input type="text" class="form-control" id="delkanavstevy" placeholder="Délka návštěvy" aria-label="Délka návštěvy">
+    </div>
+  </div>
+
+  <label for="pocetosob">Počet osob</label><br>
+  <ul class="pocetosob" id="pocetosob">
+  <li>
+    <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off">
+    <label class="btn" for="option1">1</label>
+  </li>
+  <li>
+    <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+    <label class="btn" for="option2">2</label>
+  </li>
+  <li>
+    <input type="radio" class="btn-check" name="options-base" id="option3" autocomplete="off">
+    <label class="btn" for="option3">3</label>
+  </li>
+  <li>
+    <input type="radio" class="btn-check" name="options-base" id="option4" autocomplete="off">
+    <label class="btn" for="option4">4</label>
+  </li>
+  <li>
+    <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off">
+    <label class="btn" for="option5">5</label>
+  </li>
+  <li>
+    <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+    <label class="btn" for="option6">6</label>
+  </li>
+  <li>
+    <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
+    <label class="btn" for="option7">7</label>
+  </li>
+  <li>
+    <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
+    <label class="btn" for="option8">8</label>
+  </li>
+  </ul>
+  <br>
+
+  <div class="row">
+    <label for="email" class="form-label">Vaše e-mailová adresa</label><br>
+    <input type="email" class="form-control" id="email" placeholder="Váš e-mail">
+  </div>
+
+  <div class="row">
+    <label for="mobil" class="form-label">Telefonní číslo:</label><br>
+    <input type="tel" class="form-control" id="mobil" placeholder="Vaše telefonní číslo">
+  </div>
+
+  <div class="row">
+    <label for="zprava" class="form-label">Váš vzkaz</label><br>
+    <textarea class="form-control" id="zprava" rows="3"></textarea>
+  </div>
+
+  <div class="row">
+    <input type="checkbox" class="form-label souhlas" id="souhlas">
+    <label class="form-label" for="souhlas">Souhlasím se zpracováním osobních údajů.</label>
+  </div>
+
+  <div class="rezervujeme2"><button type="submit" class="rezervujeme">Odeslat rezervaci</button></div>
+</form>
+<!--Konec - Rezervační formulář-->
+
+<!--Kontakty-->
+<hr>
+<section class="kontakty-velke">
+<div class="kontaktwrap">
+<div class="outerkon">
+    <div class="innerkon">
+      <!-- div1 -->
+      <div class="div1-kon2">
+        <div>
+          <h2>Kde nás najdete</h2><br>
+          <h3>Adresa:</h3>
+          <p>Na Pomezí 20<br>Jinonice, Praha 5<br>158 00</p>
+        </div>
+      </div>
+        <div class="oteviracka">
+          <img src="Obrazky/arrow-thing.png" class="sipka">
+          <h3>Otevírací doba:</h3>
+          <p>Po - Pá: 11:00 - 22:30<br>So: 11:00 - 0:00<br>Ne: 11:00 - 22:00</p>
+        </div>
+        <div class="odpoved-kon">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.496225263564!2d14.36471627639124!3d50.05826781552444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95b8f82f400f%3A0xd499189196e08f6e!2sNa%20Pomez%C3%AD%2020%2C%20158%2000%20Praha%205!5e0!3m2!1scs!2scz!4v1713903644577!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa2"></iframe>
+        </div>
+
+      <!-- div2 -->
+      <div class="div2-kon2">
+        <div>
+          <h2>Kontaktujte nás</h2><br>
+        </div>
+        </div>
+        <div class="oteviracka2">
+          <img src="Obrazky/arrow-thing.png" class="sipka">
+        </div>
+        <div class="odpoved-kon">
+          <p class="kontaktni-udaje2">Telefon: +123 456 789 101<br>E-mail: info@karikatura.cz</p>
+    <p class="poznamka-kontaktu2">Pro klasickou rezervaci využijte formulář výše, pro akce (svatby, hostiny, apod.) nám zavolejte.</p>
+    </div>
+        </div>
+      </div>
+
+    <!--fotka-->
+    <div class="div3-kon2">
+      <h2 class="tesimese">Těšíme se na Vás!</h2>
+      <img src="Obrazky/foto-tymu.jpg" class="fototymu2">
+    </div>
+  </section>
+<!--Kontakty - konec-->
+
+<!--Kontakty - mobil-->
+<section class="kontakty-male">
+<div class="kontaktwrap-mob">
+  <div class="outerkon-mob">
+      <div class="innerkon-mob">
+        <!-- div1 -->
+        <div class="div1-kon2-mob">
+          <div>
+            <h2>Kde nás najdete</h2><br>
+            <h3>Adresa:</h3>
+            <p>Na Pomezí 20<br>Jinonice, Praha 5<br>158 00</p>
+          </div>
+        </div>
+          <div class="oteviracka-mob">
+            <img src="Obrazky/arrow-thing.png" class="sipka">
+            <h3>Otevírací doba:</h3>
+            <p>Po - Pá: 11:00 - 22:30<br>So: 11:00 - 0:00<br>Ne: 11:00 - 22:00</p>
+          </div>
+          <div class="odpoved-kon-mob">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.496225263564!2d14.36471627639124!3d50.05826781552444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95b8f82f400f%3A0xd499189196e08f6e!2sNa%20Pomez%C3%AD%2020%2C%20158%2000%20Praha%205!5e0!3m2!1scs!2scz!4v1713903644577!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa2-mob"></iframe>
+          </div>
+  
+        <!-- div2 -->
+        <div class="div2-kon2-mob">
+          <div>
+            <h2>Kontaktujte nás</h2><br>
+          </div>
+          </div>
+          <div class="oteviracka2-mob">
+            <img src="Obrazky/arrow-thing.png" class="sipka">
+          </div>
+          <div class="odpoved-kon-mob">
+            <p class="kontaktni-udaje2-mob">Telefon: +123 456 789 101<br>E-mail: info@karikatura.cz</p>
+      <p class="poznamka-kontaktu2-mob">Pro klasickou rezervaci využijte formulář výše, pro akce (svatby, hostiny, apod.) nám zavolejte.</p>
+          </div>
+
+      <!-- div3 - fotka -->
+      <div class="div3-kon2-mob">
+        <h2 class="tesimese-mob">Těšíme se na Vás!</h2>
+        <img src="Obrazky/foto-tymu.jpg" class="fototymu2-mob">
+      </div>
+        </div>
+  </section>
+
+</body>
+</html>
+
+<script src="JS/index.js"></script>
+<script src="JS/menu.js"></script>
+<script src="https://kit.fontawesome.com/40b2aa2c26.js" crossorigin="anonymous"></script>
