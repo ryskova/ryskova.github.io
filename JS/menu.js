@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //hlavní jídlo
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('../data/hlavnijidla.csv')
+    fetch('../data/hlavni.csv')
         .then(response => response.text())
         .then(data => {
             
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const descriptionIndex = headers.indexOf('description');
             const priceIndex = headers.indexOf('price');
 
-            const hlavnijidlaDiv = document.getElementById('hlavnijidla');
+            const hlavnijidlaDiv = document.getElementById('hlavni');
 
             for (let i = 1; i < rows.length; i++) {
                 const values = rows[i].split(',');
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p><strong>${price} Kč</strong></p>
                     </div>
                 `;
-                hlavnijidlaDiv.appendChild(itemDiv);
+                hlavniDiv.appendChild(itemDiv);
             }
         })
         .catch(error => console.error('Error fetching data:', error));
