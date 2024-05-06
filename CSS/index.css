@@ -473,17 +473,6 @@ body{
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px){
-    .div5-review
-    {
-        margin-top: -10vh;
-    }
-    .div6-review
-    {
-        margin-top: -5vh;
-    }
-}
-
 
 @media (max-width: 576px){
     .div1-review{
