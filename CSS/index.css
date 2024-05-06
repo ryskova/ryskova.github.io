@@ -201,7 +201,8 @@ section.nabidka{
 }
 
 .answer{
-    overflow: hidden;
+    max-height: fit-content;
+    overflow: auto;
     transition: max-height 1.4s ease;
 }
 
