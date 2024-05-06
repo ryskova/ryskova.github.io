@@ -104,6 +104,19 @@
 <!--Nabídka jídla varianta 1-->
 <section class="menu-jidlo">
 <h1 id="menu">Nabídka</h1>
+<div class="vyber">
+  <button onclick="showCategory('all')">Vše</button>
+  <button onclick="showCategory('predkrm')">Předkrmy</button>
+  <button onclick="showCategory('polevka')">Polévky</button>
+  <button onclick="showCategory('hlavni')">Hlavní jídla</button>
+  <button onclick="showCategory('dezert')">Dezerty</button>
+</div>
+<div class="menu">
+  <div id="predkrm" class="category"></div>
+  <div id="polevka" class="category"></div>
+  <div id="hlavni" class="category"></div>
+  <div id="dezert" class="category"></div>
+</div>
         <!-- Menu - Show by btn-->
         
 </section>
@@ -139,19 +152,7 @@
             </svg>
         </div>
         <div class="answer">
-          <div class="vyber">
-            <button onclick="showCategory('all')">Vše</button>
-            <button onclick="showCategory('predkrm')">Předkrmy</button>
-            <button onclick="showCategory('polevka')">Polévky</button>
-            <button onclick="showCategory('hlavni')">Hlavní jídla</button>
-            <button onclick="showCategory('dezert')">Dezerty</button>
-        </div>
-        <div class="menu">
-            <div id="predkrm" class="category"></div>
-            <div id="polevka" class="category"></div>
-            <div id="hlavni" class="category"></div>
-            <div id="dezert" class="category"></div>
-        </div>
+          <p>Prozatím</p>
         </div>
     </div>
 
