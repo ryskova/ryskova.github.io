@@ -16,7 +16,6 @@ a{
     outline: none;
     border-radius: 10px;
     padding: 0.5rem 1rem;
-    width: fit-content;
 }
 
 a:hover{
@@ -46,6 +45,7 @@ header{
 .navbar .logo a{
     font-size: 1.5rem;
     font-weight: bold;
+    width: 150px;
 }
 
 .navbar .links{
