@@ -21,11 +21,11 @@ document.querySelector('.toggle_btn').addEventListener('click', function() {
 
 
 //jídlo menu accordion
-const menicka = document.querySelectorAll(".nabidky");
+const menicka = document.querySelectorAll(".kliknisem");
 
-menicka.forEach(nabidky => {
-    nabidky.addEventListener("click", () => {
-        nabidky.classList.toggle("active");
+menicka.forEach(kliknisem => {
+    kliknisem.addEventListener("click", () => {
+        kliknisem.classList.toggle("active");
     })
 })
 
