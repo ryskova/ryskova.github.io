@@ -42,11 +42,15 @@ header{
     z-index: 100;
 }
 
+.logofoto{
+    width: auto;
+    height: 15px;
+    margin: 2px;
+}
+
 .navbar .logo{
     font-size: 1.5rem;
     font-weight: bold;
-    height: 2px;
-    width: auto;
 }
 
 .navbar .links{
