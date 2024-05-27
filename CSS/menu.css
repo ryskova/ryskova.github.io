@@ -87,7 +87,7 @@ div.vyber button {
     border-radius: 8px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
     .vyber {
         display: flex;
         justify-content: center;
@@ -95,7 +95,7 @@ div.vyber button {
         text-align: center;
         gap: 20px;
         align-items: center;
-        max-width: 700px;
+        max-width: 400px;
     }
 
     .category {
