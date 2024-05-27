@@ -501,7 +501,7 @@ body{
     }
     .div2-review{
         width: 80%;
-        margin-left: -10%;
+        margin-left: -1px;
     }
     .div4-review{
         width: auto;
@@ -509,7 +509,7 @@ body{
     .div5-review{
         margin-top: 0px;
         width: 80%;
-        margin-left: -10%;
+        margin-left: -1px;
     }
     .div6-review{
         margin-top: 0px;
