@@ -967,6 +967,7 @@ div.rezervujeme2{
 
 /*Footer*/
 footer {
+    color: rgba(61, 36, 3,0.39);
     text-align: center;
     padding: 20px;
     height: 20vh;
@@ -981,4 +982,8 @@ footer {
 .footer a {
     color: #ffffff;
     margin-top: 10px;
+}
+
+.footer p{
+    color: rgba(61, 36, 3,0.39);
 }
