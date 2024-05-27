@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const descriptionIndex = headers.indexOf('description');
             const priceIndex = headers.indexOf('price');
 
-            const polevkaDiv = document.getElementById('napoje');
+            const napojeDiv = document.getElementById('napoje');
 
             for (let i = 1; i < rows.length; i++) {
                 const values = rows[i].split(',');
