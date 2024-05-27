@@ -11,6 +11,7 @@
     text-align: center;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .vyber button {
@@ -21,6 +22,7 @@
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s ease;
+    flex: 1 1 auto;
 }
 
 .vyber button:hover {
@@ -87,16 +89,13 @@ div.vyber button {
     border-radius: 8px;
 }
 
-@media only screen and (max-width: 425px) {
+@media (max-width: 576px) {
     .vyber {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        text-align: center;
-        gap: 20px;
-        align-items: center;
-        max-width: 400px;
+        flex-direction: column;
     }
+}
+
+@media only screen and (max-width: 768px) {
 
     .category {
         display: flex;
