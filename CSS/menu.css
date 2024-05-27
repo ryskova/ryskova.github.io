@@ -134,7 +134,7 @@ div.vyber button {
     }
 
     .category div .stuff {
-        width: 60%;
+        width: 50%;
         max-width: calc(100% - 160px);
         display: flex;
         flex-direction: column;
