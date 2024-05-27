@@ -112,7 +112,6 @@ div.vyber button {
         width: 40%;
         max-width: 150px;
         height: auto;
-        /* object-fit: cover; */
         border-radius: 8px;
         margin-right: 10px;
         max-height: 180px;
@@ -130,13 +129,10 @@ div.vyber button {
     }
 
     .category div h3 {
-        font-size: 1.2em; /* Adjusted font size for the heading */
-        margin: 0; /* Reduced margin for more compact spacing */
+        font-size: 1.2em;
+        margin: 0;
     }
-
-    .category div p.popis {
-        display: none;
-    }
+    
     .category div p{
         margin: 0;
     }
