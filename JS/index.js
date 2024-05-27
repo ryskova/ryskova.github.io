@@ -20,29 +20,6 @@ document.querySelector('.toggle_btn').addEventListener('click', function() {
 });
 
 
-//jídlo menu accordion
-const menicka = document.querySelectorAll(".kliknisem");
-
-menicka.forEach(kliknisem => {
-    kliknisem.addEventListener("click", () => {
-        kliknisem.classList.toggle("active");
-    })
-})
-
-//datum pro nadpis o denním menu
-const currentDate = new Date();
-
-const daysOfWeek = ["neděli", "pondělí", "úterý", "středu", "čtvrtek", "pátek", "sobotu"];
-
-const dayOfWeek = daysOfWeek[currentDate.getDay()];
-const day = currentDate.getDate();
-const month = currentDate.getMonth() + 1;
-const year = currentDate.getFullYear();
-
-const formattedDate = `Denní menu na ${dayOfWeek} ${day}.${month}.${year}`;
-
-document.getElementById("datumjidelnicku").innerHTML = formattedDate;
-
 //faq funkčnost otevírání
 const otazecky = document.querySelectorAll(".dotazy");
 
