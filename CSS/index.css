@@ -964,3 +964,21 @@ form label[for="email"] {
 div.rezervujeme2{
     text-align: center;
 }
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 20px;
+    height: 20vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer a {
+    color: #ffffff;
+    margin-top: 10px;
+}
