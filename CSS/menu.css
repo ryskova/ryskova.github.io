@@ -95,6 +95,12 @@ div.vyber button {
     }
 }
 
+@media (max-width: 374px) {
+    .category div p.popis {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
     .category {
