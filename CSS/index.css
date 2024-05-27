@@ -463,24 +463,30 @@ body{
 
 
 @media (max-width: 1024px){
+    .div2-review
+    {
+        margin-left: 5vh;
+    }
     .div5-review
     {
-        margin-top: -40vh; 
+        margin-top: -45vh; 
+        margin-left: 5vh;
     }
     .div6-review
     {
-        margin-top: -9vh;
+        margin-top: -15vh;
     }
 }
 
 @media (max-width: 768px){
     .div5-review
     {
-        margin-top: -90vh; 
+        margin-top: -70vh; 
+        
     }
     .div6-review
     {
-        margin-top: -59vh;
+        margin-top: -39vh;
     }
 }
 
