@@ -965,6 +965,15 @@ div.rezervujeme2{
     text-align: center;
 }
 
+@media (max-width: 768px){
+    .rezervujeme{
+        font-size: 1.2rem;
+    }
+    #pocetosob{
+        margin-left: none;
+    }
+}
+
 /*Footer*/
 footer {
     color: rgba(61, 36, 3,0.39);
