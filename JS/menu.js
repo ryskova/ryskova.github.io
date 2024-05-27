@@ -155,3 +155,38 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => console.error('Error fetching data:', error));
 });
 
+//napoje
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('../data/napoje.csv')
+        .then(response => response.text())
+        .then(data => {
+            
+            const rows = data.split('\n');
+            const headers = rows[0].split(',');
+
+            const nameIndex = headers.indexOf('name');
+            const descriptionIndex = headers.indexOf('description');
+            const priceIndex = headers.indexOf('price');
+
+            const polevkaDiv = document.getElementById('napoje');
+
+            for (let i = 1; i < rows.length; i++) {
+                const values = rows[i].split(',');
+                const name = values[nameIndex];
+                const description = values[descriptionIndex];
+                const price = values[priceIndex];
+
+                const itemDiv = document.createElement('div');
+                itemDiv.innerHTML = `
+                    <div class="stuff">
+                        <h3>${name}</h3>
+                        <p class="popis">${description}</p>
+                        <p><strong>${price} Kč</strong></p>
+                    </div>
+                `;
+                napojeDiv.appendChild(itemDiv);
+            }
+        })
+        .catch(error => console.error('Error fetching data:', error));
+});
+
