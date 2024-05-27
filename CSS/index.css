@@ -500,14 +500,18 @@ body{
         width: auto;
     }
     .div2-review{
-        width: 73%;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
     }
     .div4-review{
         width: auto;
     }
     .div5-review{
         margin-top: 0px;
-        width: 73%;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
     }
     .div6-review{
         margin-top: 0px;
