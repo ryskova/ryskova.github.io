@@ -463,9 +463,6 @@ body{
 
 
 @media (max-width: 1024px){
-    .div4-review{
-        margin-bottom: -20vh;
-    }
     .div2-review
     {
         margin-left: 5vh;
@@ -474,12 +471,10 @@ body{
     {
         margin-top: -38vh; 
         margin-left: 5vh;
-        margin-bottom: -20vh;
     }
     .div6-review
     {
         margin-top: -23vh;
-        margin-bottom: -20vh;
     }
 }
 
@@ -488,25 +483,23 @@ body{
     {
         width: 60%;
     }
-    .div4-review{
-        margin-bottom: -40vh;
-    }
     .div5-review
     {
         width: 60%;
         margin-top: -60vh; 
-        margin-bottom: -40vh;
     }
     .div6-review
     {
         margin-top: -43vh;
-        margin-bottom: -40vh;
     }
 }
 
 
 @media (max-width: 576px){
     .div1-review{
+        width: auto;
+    }
+    .div2-review{
         width: auto;
     }
     .div4-review{
