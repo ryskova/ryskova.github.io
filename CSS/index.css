@@ -469,28 +469,30 @@ body{
     }
     .div5-review
     {
-        margin-top: -40vh; 
+        margin-top: -39vh; 
         margin-left: 5vh;
     }
     .div6-review
     {
-        margin-top: -20vh;
+        margin-top: -22vh;
     }
 }
 
 @media (max-width: 768px){
     .div2-review
     {
-        margin-right: 5vh;
+        margin-right: -5vh;
+        margin-left: -3vh;
     }
     .div5-review
     {
-        margin-top: -75vh; 
-        margin-right: 5vh;
+        margin-top: -79vh; 
+        margin-right: -5vh;
+        margin-left: -3vh;
     }
     .div6-review
     {
-        margin-top: -44vh;
+        margin-top: -42vh;
     }
 }
 
