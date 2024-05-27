@@ -501,8 +501,7 @@ body{
     }
     .div2-review{
         width: 80%;
-        align-items: center;
-        justify-content: center;
+        margin-right: 10%;
     }
     .div4-review{
         width: auto;
@@ -510,8 +509,7 @@ body{
     .div5-review{
         margin-top: 0px;
         width: 80%;
-        align-items: center;
-        justify-content: center;
+        margin-right: 10%;
     }
     .div6-review{
         margin-top: 0px;
