@@ -12,7 +12,8 @@
     margin-bottom: 20px;
     text-align: center;
     width: 80vw;
-    margin-left: 10vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .special-offer h2 {
