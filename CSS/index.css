@@ -486,15 +486,15 @@ body{
 @media (max-width: 768px){
     .div2-review
     {
-        width: 50%;
+        width: 60%;
     }
     .div4-review{
         margin-bottom: -40vh;
     }
     .div5-review
     {
-        width: 50%;
-        margin-top: -70vh; 
+        width: 60%;
+        margin-top: -68vh; 
         margin-bottom: -40vh;
     }
     .div6-review
