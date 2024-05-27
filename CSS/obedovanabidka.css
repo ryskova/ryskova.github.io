@@ -1,0 +1,42 @@
+/* obedovanabidka.css */
+.special-offer {
+    position: sticky;
+    bottom: 20px;
+    display: none;
+    background-color: rgb(61, 36, 3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.special-offer h2 {
+    color: rgb(217, 213, 213);
+    margin-bottom: 10px;
+}
+
+.special-offer p {
+    margin: 0;
+    color: white;
+}
+
+#specialItem {
+    font-weight: bold;
+    color: white;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+.close-btn:hover {
+    color: wheat;
+}
