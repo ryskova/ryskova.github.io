@@ -27,10 +27,6 @@ a:hover{
     transition-duration: 0.5s;
 }
 
-section {
-    margin-top: 50px;
-}
-
 /*Header*/
 header{
     padding: 2vh 2rem;
