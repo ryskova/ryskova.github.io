@@ -36,7 +36,7 @@ header{
     padding: 2vh 2rem;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 1000;
     background-color: white;
 }
 
@@ -48,7 +48,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .navbar .logo{
