@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="stuff">
                         <h3>${name}</h3>
                         <p class="popis">${description}</p>
-                        <p><strong>${price} Kč</strong></p>
+                        <p class="cena"><strong>${price} Kč</strong></p>
                     </div>
                 `;
                 predkrmDiv.appendChild(itemDiv);
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="stuff">
                         <h3>${name}</h3>
                         <p class="popis">${description}</p>
-                        <p><strong>${price} Kč</strong></p>
+                        <p class="cena"><strong>${price} Kč</strong></p>
                     </div>
                 `;
                 hlavnijidlaDiv.appendChild(itemDiv);
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="stuff">
                         <h3>${name}</h3>
                         <p class="popis">${description}</p>
-                        <p><strong>${price} Kč</strong></p>
+                        <p class="cena"><strong>${price} Kč</strong></p>
                     </div>
                 `;
                 dezertDiv.appendChild(itemDiv);
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="stuff">
                         <h3>${name}</h3>
                         <p class="popis">${description}</p>
-                        <p><strong>${price} Kč</strong></p>
+                        <p class="cena"><strong>${price} Kč</strong></p>
                     </div>
                 `;
                 polevkaDiv.appendChild(itemDiv);
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="stuff">
                         <h3>${name}</h3>
                         <p class="popis">${description}</p>
-                        <p><strong>${price} Kč</strong></p>
+                        <p class="cena"><strong>${price} Kč</strong></p>
                     </div>
                 `;
                 napojeDiv.appendChild(itemDiv);

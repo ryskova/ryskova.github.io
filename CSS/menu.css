@@ -132,7 +132,10 @@ div.vyber button {
         font-size: 1.2em;
         margin: 0;
     }
-    
+
+    .category div p.cena {
+        margin-top: 10px;
+    }
     .category div p{
         margin: 0;
     }
