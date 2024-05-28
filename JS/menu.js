@@ -1,23 +1,18 @@
 //predkrm
 document.addEventListener('DOMContentLoaded', function () {
-    // Fetch data from predkrm.csv
     fetch('../data/predkrm.csv')
         .then(response => response.text())
         .then(data => {
-            // Parse CSV data
             const rows = data.split('\n');
             const headers = rows[0].split(',');
 
-            // Find the index of each column
             const imageIndex = headers.indexOf('image');
             const nameIndex = headers.indexOf('name');
             const descriptionIndex = headers.indexOf('description');
             const priceIndex = headers.indexOf('price');
 
-            // Select the #predkrm div
             const predkrmDiv = document.getElementById('predkrm');
 
-            // Loop through rows and create HTML content
             for (let i = 1; i < rows.length; i++) {
                 const values = rows[i].split(',');
                 const image = values[imageIndex];
@@ -25,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 const description = values[descriptionIndex];
                 const price = values[priceIndex];
 
-                // Create a div for each item and append to #predkrm
                 const itemDiv = document.createElement('div');
                 itemDiv.innerHTML = `
                     <img src="${image}" alt="${name}">
