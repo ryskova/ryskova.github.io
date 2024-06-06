@@ -84,6 +84,8 @@ header{
 .dropdown_menu{
     display: none;
     position: sticky;
+    align-items: right;
+    justify-content: right;
     right: 2rem;
     top: 60px;
     width: 300px;
