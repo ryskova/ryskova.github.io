@@ -99,6 +99,7 @@ header{
 
 .dropdown_menu.open{
     height: 305px;
+    position: absolute;
 }
 
 .dropdown_menu li{
@@ -106,7 +107,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
 }
 
 /* responzivnost menu */
