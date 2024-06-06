@@ -33,6 +33,7 @@ header{
     top: 0;
     z-index: 1000;
     background-color: antiquewhite;
+    box-shadow: 0 0 10px black;
 }
 
 .navbar{
@@ -98,6 +99,7 @@ header{
 
 .dropdown_menu.open{
     height: 305px;
+    position: sticky;
 }
 
 .dropdown_menu li{
